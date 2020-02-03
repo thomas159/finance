@@ -13,11 +13,11 @@ const Button = styled.button`
   color: #fff;
   text-transform: capitalize;
   letter-spacing: 3px;
-  background: ${palette.green};
+  background: ${palette.blue};
   cursor: pointer;
   &:hover, focus {
     transition: all 0.25s ease;
-    background: ${palette.darkGreen};
+    background: ${palette.blue};
   }
 `
 
