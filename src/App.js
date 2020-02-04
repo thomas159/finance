@@ -2,6 +2,10 @@ import React from 'react';
 import './App.css';
 import Card from './components/Card'
 import styled, { createGlobalStyle } from 'styled-components'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import money from './images/money.jfif'
+
 const GlobalStyle = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Syncopate:700|Teko:400|Orbitron:400|Raleway:400');
 * {
@@ -68,7 +72,8 @@ const Wrap = styled.div`
 const PageWrap = styled.div`
   display: flex;
   width: 100%;
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 100px);
+  background: url(${money}); no-repeat;
 `
 
 const Hero = styled.div`
@@ -84,6 +89,7 @@ const HeroRight = styled.div`
 const App = () => {
   return(
     <Wrap>
+      <Header />
       <GlobalStyle whiteColor />
       <PageWrap>
         <Hero> 
@@ -91,6 +97,7 @@ const App = () => {
           <HeroRight><Card /></HeroRight>
         </Hero>
       </PageWrap>
+      <Footer />
     </Wrap>
   )
 }

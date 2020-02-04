@@ -2,12 +2,11 @@ import styled from 'styled-components'
 import * as palette from '../../variables'
 
 const Button = styled.button`
-  margin: 0;
+  margin: 20px 0 10px 0;
   border: 0;
   padding: 0;
   outline: 0;
   padding: 10px;
-  margin: 0 10px 10px 0;
   justify-content: center;
   align-items: center;
   color: #fff;
